@@ -1,0 +1,35 @@
+.img1{
+    width: 250px;
+    height: 280px;
+    border-radius: 30%;
+    
+}
+.sale{
+    width: 850px;
+    height: 250px;
+    align-items: center;
+    margin-left: 6cm;
+    border-radius: 10%;
+}
+#sale
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(255, 0, 0) ;
+    border-radius: 40%;
+    position: fixed;
+    align-items: center;
+}
+th{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+}
+.ip{
+    text-decoration: line-through;
+    
+}
+.op{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://i.imgur.com/22jmgw2.jpg');
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.ng-valid [required]{
+    border-left: 5px solid limegreen;
+}
+.ng-invalid:not(form) {
+
+    border-left: 5px solid red;
+}

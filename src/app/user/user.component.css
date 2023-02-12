@@ -1,0 +1,14 @@
+img{
+    height: 350px;
+    width: 250px;
+    border-radius: 10%;
+}
+h6{
+    color: white;
+    font-weight: 900;
+}
+
+.white{
+    color: white;
+    opacity: 80%;
+}

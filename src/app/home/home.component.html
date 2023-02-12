@@ -1,0 +1,85 @@
+
+<app-navbar></app-navbar>
+<br/><br/><br/><br/>
+
+
+
+
+
+<app-footer></app-footer>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<u>
+  
+
+<h2 style="background-color: black;color: white;font-family: serif;text-align: center; font-style: oblique;"> The five "products of the week" at a discount 50%</h2>
+</u>
+<br/>
+<div class="container"></div>
+<marquee behavior="scrollamount" scrollamount="20"><img  src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="sale"/></marquee>
+
+<br/>
+<div class="container">
+<table  style="border:100px;" class="table table-bordered">
+    <thead>
+      <tr>
+      
+        <th >SerialNumber</th>
+        <th > name</th>
+        <th style="text-align: center;" >price</th>
+        <th >category</th>
+        <th>description</th>
+        <th style="text-align: center;">img</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of pro">
+        
+        <td>{{i.SerialNumber}}</td>
+        <td >{{i.name}}</td>
+        <div >
+        <td><p class="ip"> ₪{{i.price}}</p>
+          <p class="op"> ₪{{i.discount}}</p></td>
+</div>
+<div >
+
+        </div>
+        <td> {{i.category}}</td>
+        <td>{{i.description}}</td>
+        <td> <span  id="sale"class="btn-dark">SALE 50%</span>  <img class="img1" [src]="i.img"/></td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+  <u>
+  <h2  style="text-align: center;background-color: black;color: white;">  newest five products in our store</h2>
+  <br/><br/><br/></u>
+
+  --> <div class="container">
+    <table  style="border:100px;" class="table table-bordered">
+        <thead>
+          <tr>
+          
+            <th >SerialNumber</th>
+            <th> name</th>
+            <th style="text-align: center;" >price</th>
+            <th >category</th>
+            <th>description</th>
+            <th style="text-align: center;">img</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let n of new">
+            
+            <td>{{n.SerialNumber}}</td>
+            <td>{{n.name}}</td>
+            <td>{{n.price}}</td>
+            <td> {{n.category}}</td>
+            <td>{{n.description}}</td>
+            <td> <span  id="sale"class="btn-dark">NEW!!!!</span>  <img class="img1" [src]="n.img"/></td>
+         </tr>
+        </tbody>
+      </table>
+    </div>
+ 
+

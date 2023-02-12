@@ -1,0 +1,37 @@
+
+
+<ng-container *ngFor="let x of pros">
+    <ng-container *ngIf="x.category == selectedCategory">
+    <div id="hover" class="container">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 flex-shrink-1 bd-highlight">
+          
+        <div class="d-flex flex-wrap">
+          
+          <div id="card1"class="card" style="width: 18rem;" >
+            
+            
+ <img id="cardImg" class="card-img-top" src={{x.img}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{x.name}}</h5>
+              <h5 class="card-text">{{x.price}}₪</h5>
+              <p class="card-title">{{x.description}}</p>
+              <div class="center">
+                <div *ngIf="pros">
+                    <h3>{{ pros.name }}</h3>
+                    <h4>{{ pros.price}}</h4>
+                    <p>{{ pros.description }}</p>
+    
+                    
+                <button (click)="addToCart(x)" id="addto" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </ng-container>
+  </ng-container>

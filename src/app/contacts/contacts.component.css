@@ -1,0 +1,15 @@
+img{
+    width: 250px;
+    height: 280px;
+    border-radius: 70%;
+    background-color: white;
+}
+th{
+    font-weight: bold;
+    color: white;
+}
+td{
+    font-weight: 900;
+    color: white;
+
+}

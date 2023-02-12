@@ -1,0 +1,20 @@
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.cart_icon{
+    position: relative;
+    top: -10px;
+}
+.user{
+    position: relative;
+    height: 50px; 
+     border-radius:100%  ;
+     top: -20px;
+
+}
+.nav-link1{
+    position: relative;
+    top: -10px;
+}
